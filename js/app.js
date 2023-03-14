@@ -182,18 +182,17 @@ function ejercicio11() {
   } else {
     mayor = nombre3;
   }
-
-  document.write(`La persona más vieja es <strong>${mayor}</strong> con ${edadMaxima} años`);
+  document.getElementById("ejercicio11paragraph").innerHTML = (`La persona más vieja es <strong>${mayor}</strong> con ${edadMaxima} años`);
 }
 
 function ejercicio12() {
-  let enteroRandom = Math.floor(Math.random() * 99);
-  document.write(enteroRandom + "<br>");
+  let enteroRandom = Math.floor(Math.random() * 99); //acotado entre 1 y 100
+  document.getElementById("ejercicio12paragraph").innerHTML = (enteroRandom + "<br>");
 }
 
 function ejercicio13() {
   let texto = prompt("Ingrese un texto");
-  document.write(texto.toUpperCase());
+  document.getElementById("ejercicio13paragraph").innerHTML = (texto.toUpperCase());
 }
 
 function ejercicio14() {
@@ -204,7 +203,7 @@ function ejercicio14() {
   for (let i = 0; i < texto.length; i++) {
     texto2 += texto.charAt(i) + "-";
   }
-  document.write(texto2);
+  document.getElementById("ejercicio14paragraph").innerHTML = (texto2);
 }
 
 function ejercicio15() {
@@ -222,7 +221,7 @@ function ejercicio15() {
       default:
     }
   }
-  document.write(`cantidad de vocales en " ${frase} ": <strong>${cantidad_vocales}</strong>`)
+  document.getElementById("ejercicio15paragraph").innerHTML = (`cantidad de vocales en " ${frase} ": <strong>${cantidad_vocales}</strong>`)
 }
 
 function ejercicio16() {
@@ -230,7 +229,7 @@ function ejercicio16() {
   let frase_reversa = frase.split("");
   frase_reversa = frase_reversa.reverse();
   frase_reversa = frase_reversa.join("");
-  document.write(`${frase} 🔁 ${frase_reversa}`);
+  document.getElementById("ejercicio16paragraph").innerHTML = (`${frase} 🔁 ${frase_reversa}`);
 }
 
 function ejercicio17() {
@@ -245,5 +244,7 @@ function ejercicio17() {
       break;
     }
   }
-  vocal_encontrada ? document.write(`Posición de vocal: ${vocal_posicion + 1}`) : document.write(`${frase} no contiene vocales`);
+  vocal_encontrada ? 
+  document.getElementById("ejercicio17paragraph").innerHTML = (`Posición de vocal: ${vocal_posicion + 1}`) :
+  document.getElementById("ejercicio17paragraph").innerHTML = (`${frase} no contiene vocales`);
 }
