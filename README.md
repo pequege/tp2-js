@@ -1,6 +1,6 @@
 # Trabajo Práctico 2 - Javascript bucles 🔁
 
-En éste tp practicamos if/else, switch, for
+En este tp practicamos bucles
 
 ## Herramientas / Librerias
 - [Bootstrap v5.3](https://getbootstrap.com/)
