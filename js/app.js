@@ -18,7 +18,7 @@ function ejercicio2() {
   } else if (isNaN(nota)) {
     alert("Introduce un número válido")
   } else {
-    console.log(`nota: ${nota}`)
+    //console.log(`nota: ${nota}`)
     switch (nota) {
       case 0:
       case 1:

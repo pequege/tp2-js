@@ -50,13 +50,13 @@
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+          <h2 class="accordion-header" id="flush-headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
               Ejercicio #2
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <p>Escribir un programa que solicite una nota (número) de 0  a 10. Luego mostrar la calificación en un alert según los siguientes rangos de nota: <br>
                 0-2: Muy deficiente <br>
@@ -69,22 +69,43 @@
               </p>
               <pre class="mb-0">
                 <code class="language-javascript rounded">
-                  let edad;
-                  do {
-                    edad = parseInt(prompt("Ingrese su edad"));
-                  }
-                  while (isNaN(edad) || edad < 1);
-                  if (edad >= 18) {
-                    console.log("Puede conducir 😎")
+                  let nota = parseInt(prompt("🤓 Ingrese su nota:"));
+                  if (nota < 0 || nota > 10) {
+                    alert("Número erroneo 🤨");
+                  } else if (isNaN(nota)) {
+                    alert("Introduce un número válido")
                   } else {
-                    console.log("No puede 😢");
+                    switch (nota) {
+                      case 0:
+                      case 1:
+                      case 2:
+                        alert("Muy deficiente");
+                        break;
+                      case 3:
+                      case 4:
+                        alert("Insuficiente");
+                        break;
+                      case 5:
+                      case 6:
+                        alert("Suficiente");
+                        break;
+                      case 7:
+                        alert("Bien");
+                        break;
+                      case 8:
+                      case 9:
+                        alert("Notable");
+                        break;
+                      case 10:
+                        alert("Sobresaliente");
+                        break;
+                      default:
+                        alert("🤷‍♂️");
+                    }
                   }
                 </code>
               </pre>
-              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
-              <pre class="mt-3 p-3 bg-dark text-success rounded">
-                » <span id="ejercicio1paragraph" ></span>
-              </pre>
+              <button class="btn btn-primary" onclick="ejercicio2()">Test</button>
             </div>
           </div>
         </div>
