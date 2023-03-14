@@ -51,19 +51,19 @@ function ejercicio2() {
 
 function ejercicio3() {
   let opc = true;
-  let cadenas = prompt();
+  let cadenas = prompt("Ingrese una cadena de texto");
   do {
     cadenas += "-" + prompt();
     opc = confirm("¿Continuar?");
   } while (opc == true);
-  document.write(cadenas);
+  document.getElementById("ejercicio3paragraph").innerHTML = cadenas;
 }
 
 function ejercicio4() {
   let opc = true;
   let suma = 0;
   do {
-    numero = parseInt(prompt());
+    numero = parseInt(prompt("Ingrese un número a sumar"));
     if (isNaN(numero)) {
       alert(`${numero} no es un número`);
     } else {
@@ -71,7 +71,7 @@ function ejercicio4() {
       opc = confirm("¿Continuar?");
     }
   } while (opc == true);
-  document.write(suma);
+  document.getElementById("ejercicio4paragraph").innerHTML = suma;
 }
 
 function ejercicio5() {
@@ -79,18 +79,18 @@ function ejercicio5() {
   let letras_dni = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"];
   if (dni > 0 && dni < 99999999) {
     resto = dni % 23;
-    document.write(`Letra del documento ${dni}: ${letras_dni[resto]}`);
+    document.getElementById("ejercicio5paragraph").innerHTML = (`Letra del documento ${dni}: ${letras_dni[resto]}`);
   } else {
-    document.write("Número de DNI inválido");
+    document.getElementById("ejercicio5paragraph").innerHTML = ("Número de DNI inválido");
   }
 }
 
 function ejercicio6() {
-  document.write("Piramide:<br>");
+  document.getElementById("ejercicio6paragraph").innerHTML = ("Piramide:<br>");
   for (let i = 1; i <= 30; i++) {
-    document.write("<br>");
+    document.getElementById("ejercicio6paragraph").innerHTML += ("<br>");
     for (let j = 1; j <= i; j++) {
-      document.write(`${i}`);
+      document.getElementById("ejercicio6paragraph").innerHTML += (`${i}`);
     }
   }
 }
@@ -103,11 +103,11 @@ function ejercicio7() {
     }
     while (isNaN(alturaPiramide) || alturaPiramide > 50 || alturaPiramide <= 0);
   }
-  document.write("Piramide:<br>");
+  document.getElementById("ejercicio7paragraph").innerHTML += "Piramide:<br>";
   for (let k = alturaPiramide; k >= 0; k--) {
-    document.write("<br>");
+    document.getElementById("ejercicio7paragraph").innerHTML += ("<br>");
     for (let l = 1; l <= k; l++) {
-      document.write(`${k}`);
+      document.getElementById("ejercicio7paragraph").innerHTML += (`${k}`);
     }
   }
 }
@@ -120,30 +120,30 @@ function ejercicio8() {
     }
     while (isNaN(alturaPiramide) || alturaPiramide > 50 || alturaPiramide <= 0);
   }
-  document.write("Piramide:<br>");
-  document.write(`<div style="text-align: center;">`)
+  document.getElementById("ejercicio8paragraph").innerHTML += ("Piramide:<br>");
+  document.getElementById("ejercicio8paragraph").innerHTML += (`<div style="text-align: center;">`)
   for (let m = 1; m <= alturaPiramide; m++) {
-    document.write("<br>");
+    document.getElementById("ejercicio8paragraph").innerHTML += ("<br>");
     for (let n = 1; n <= m; n++) {
-      document.write(`${n}`);
+      document.getElementById("ejercicio8paragraph").innerHTML += (`${n}`);
     }
   }
-  document.write(`</div>`)
+  document.getElementById("ejercicio8paragraph").innerHTML += (`</div>`);
 }
 
 function ejercicio9() {
   for (let o = 1; o <= 500; o++) {
-    document.write(`${o}`);
+    document.getElementById("ejercicio9paragraph").innerHTML += (`${o}`);
     if (o % 4 === 0) {
-      document.write(" (Múltiplo de 4)");
+      document.getElementById("ejercicio9paragraph").innerHTML += (" (Múltiplo de 4)");
     }
     if (o % 9 === 0) {
-      document.write(" (Múltiplo de 9)");
+      document.getElementById("ejercicio9paragraph").innerHTML += (" (Múltiplo de 9)");
     }
     if (o % 5 === 0) {
-      document.write(`<hr>`);
+      document.getElementById("ejercicio9paragraph").innerHTML += (`<hr>`);
     }
-    document.write(`<br>`);
+    document.getElementById("ejercicio9paragraph").innerHTML += (`<br>`);
   }
 }
 
@@ -151,17 +151,19 @@ function ejercicio10() {
   let filas = parseInt(prompt("Ingrese el número de filas"));
   let columnas = parseInt(prompt("Ingrese el número de columnas"));
   let indice = 1;
-  document.write(`<table class="table table-striped-columns">
-	<tbody>`)
+  let html_partial;
+  html_partial = (`<table class="table table-striped-columns">
+	<tbody>`);
   for (let i = 0; i < filas; i++) {
-    document.write(`<tr>`)
+    html_partial += (`<tr>`);
     for (let j = 0; j < columnas; j++) {
-      document.write(`<td>${indice++}</td>`)
+      html_partial += (`<td>${indice++}</td>`);
     }
-    document.write(`</tr>`)
+    html_partial += (`</tr>`);
   }
-  document.write(`</tbody>
-    </table>`)
+  html_partial += (`</tbody>
+    </table>`);
+  document.getElementById("ejercicio10paragraph").innerHTML = html_partial;
 }
 
 function ejercicio11() {
