@@ -28,11 +28,11 @@
             <div class="accordion-body">
               <p>Escribir un programa que solicite la edad y si es mayor de 18 años mostrar un mensaje que ya puede conducir, si la edad ingresada no es un número válido indicarlo en un mensaje.
               </p>
-              <pre>
-                <code class="language-javascript rounded ps-0">
-                  let edad = parseInt(prompt("Ingrese su edad:"));
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
                   do {
-                    edad = parseInt(prompt("Ponga un numeró válido 😠"));
+                    edad = parseInt(prompt("Ingrese su edad"));
                   }
                   while (isNaN(edad) || edad < 1);
                   if (edad >= 18) {
@@ -42,40 +42,565 @@
                   }
                 </code>
               </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
             </div>
           </div>
         </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Accordion Item #2
-                  </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                  data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                      demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                      body. Let's imagine this being filled with some actual content.</div>
-              </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #2
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Escribir un programa que solicite una nota (número) de 0  a 10. Luego mostrar la calificación en un alert según los siguientes rangos de nota: <br>
+                0-2: Muy deficiente <br>
+                3-4: Insuficiente <br>
+                5-6: Suficiente <br>
+                7: Bien <br>
+                8-9: Notable <br>
+                10: Sobresaliente <br>
+                Si ingreso un número que no esté dentro del rango de 0 a 10 mostrar un mensaje de “número erróneo”. Si el número ingresado no es válido mostrar el mensaje “Introduce un número válido”.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
           </div>
-          <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false"
-                      aria-controls="flush-collapseThree">
-                      Accordion Item #3
-                  </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse"
-                  aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                      demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                      body. Nothing more exciting happening here in terms of content, but just filling up the
-                      space to make it look, at least at first glance, a bit more representative of how this would
-                      look in a real-world application.</div>
-              </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #3
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
           </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #4
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida números hasta que se pulse “cancelar”. Si no es un número deberá indicarse con un «alert» y seguir pidiendo números. Al salir con “cancelar” deberá indicarse la suma total de los números introducidos.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #5
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realizar una página con un script que calcule el valor de la letra de un número de DNI (Documento nacional de identidad).
+                <br>
+                El algoritmo para calcular la letra del dni es el siguiente :
+                <br>
+                El número debe ser entre 0 y 99999999
+                Debemos calcular el resto de la división entera entre el número y el número 23. <br>
+                Según el resultado, de 0 a 22, le corresponderá una letra de las siguientes:  (T, R, W, A, G, M, Y, F, P, D, X, B, N, J, Z, S, Q, V, H, L, C, K, E) 
+                Si lo introducido no es un número deberá indicarse con un alert y volver a preguntar. <br>
+                Deberá de repetirse el proceso hasta que el usuario pulse «cancelar».
+                <br>
+                Ejemplo: si ingresamos el DNI 40773821, la salida debería ser ‘L’
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #6
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma : <br>
+                1 <br>
+                22 <br>
+                333 <br>
+                4444 <br>
+                55555 <br>
+                666666 <br>
+                …….
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #7
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Haz un script que escriba una pirámide inversa de los números del 1 al número que indique el usuario (no mayor de 50)  de la siguiente forma : (suponiendo que indica 30). <br>
+                303030303030303030303030303030303030303030303030303030303030 <br>
+                2929292929292929292929292929292929292929292929292929292929 <br>
+                28282828282828282828282828282828282828282828282828282828 <br>
+                ….. <br>
+                333 <br>
+                22 <br>
+                1
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  //asd
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #8
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Crea script para generar pirámide siguiente con los números del 1 al número que indique el usuario (no mayor de 50) <br>
+                1 <br>
+                12 <br>
+                123 <br>
+                1234 <br>
+                12345 <br>
+                123456 <br>
+                ……
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #9
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+                1 <br>
+                2 <br>
+                3 <br>
+                4 (Múltiplo de 4) <br>
+                5- <br>
+                <hr>
+                6 <br>
+                7 <br>
+                8 (Múltiplo de 4) <br>
+                9 (Múltiplo de 9) <br>
+                10
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #10
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida número de filas y columnas y escriba una tabla. Dentro de cada una de las celdas deberá escribirse un número consecutivo en orden descendente. Si, por ejemplo, la tabla es de 7×5 los números irán del 35 al 1.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #11
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida por teclado 3 edades y 3 nombres e indique el nombre del mayor.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #12
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que genere un número aleatorio entre 1 y 99.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #13
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida un texto y lo muestre en mayúsculas.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #14
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida una cadena de texto y lo muestre poniendo el signo – entre cada carácter sin usar el método replace. Por ejemplo, si tecleo “hola qué tal”, deberá salir “h-o-l-a- -q-u-e- -t-a-l”.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #15
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que cuente el número de vocales que tiene un texto.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #16
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que pida una cadena de texto y la devuelva al revés. Es decir, si tecleo “hola que tal” deberá mostrar “lat euq aloh”.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Ejercicio #17
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>Realiza un script que muestre la posición de la primera vocal de un texto introducido por teclado.
+              </p>
+              <pre class="mb-0">
+                <code class="language-javascript rounded">
+                  let edad;
+                  do {
+                    edad = parseInt(prompt("Ingrese su edad"));
+                  }
+                  while (isNaN(edad) || edad < 1);
+                  if (edad >= 18) {
+                    console.log("Puede conducir 😎")
+                  } else {
+                    console.log("No puede 😢");
+                  }
+                </code>
+              </pre>
+              <button class="btn btn-primary" onclick="ejercicio1()">Test</button>
+              <pre class="mt-3 p-3 bg-dark text-success rounded">
+                » <span id="ejercicio1paragraph" ></span>
+              </pre>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

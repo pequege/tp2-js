@@ -1,13 +1,13 @@
 function ejercicio1() {
-  let edad = parseInt(prompt("Ingrese su edad:"));
+  let edad;
   do {
-    edad = parseInt(prompt("Ponga un numeró válido 😠"));
+    edad = parseInt(prompt("Ingrese su edad"));
   }
   while (isNaN(edad) || edad < 1);
   if (edad >= 18) {
-    console.log("Puede conducir 😎")
+    document.getElementById("ejercicio1paragraph").innerHTML = "Puede conducir 😎";
   } else {
-    console.log("No puede 😢");
+    document.getElementById("ejercicio1paragraph").innerHTML = "No puede 😢";
   }
 }
 
@@ -245,5 +245,3 @@ function ejercicio17() {
   }
   vocal_encontrada ? document.write(`Posición de vocal: ${vocal_posicion + 1}`) : document.write(`${frase} no contiene vocales`);
 }
-
-ejercicio17();
